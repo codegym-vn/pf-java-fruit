@@ -5,7 +5,7 @@ interface Edible {
 }
 
 abstract class Animal {
-    + {abstract} howtoEat(): String
+    + {abstract} makeSound(): String
 }
 
 class Tiger extends Animal
