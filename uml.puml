@@ -1,0 +1,21 @@
+@startuml
+
+interface Edible {
+    + {abstract} howtoEat(): String
+}
+
+abstract class Animal {
+    + {abstract} howtoEat(): String
+}
+
+class Tiger extends Animal
+
+class Chicken extends Animal implements Edible
+
+abstract class Fruit implements Edible
+
+class Orange extends Fruit
+
+class Apple extends Fruit
+
+@enduml
